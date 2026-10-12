@@ -130,7 +130,7 @@ td input{width:100%;border:0;background:transparent;color:var(--txt);text-align:
    ☁️ 云同步配置：注册 Supabase 后，把下面两行替换成你自己的
    Project URL 和 anon public key（在 Project Settings → API 里）
    ========================================================== */
-const SUPABASE_URL = "https://tofatcrohwwwurlzuudy.supabase.co/rest/v1/";
+const SUPABASE_URL = "https://tofatcrohwwwurlzuudy.supabase.co";
 const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRvZmF0Y3JvaHd3d3VybHp1dWR5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTE4MTYwNjQsImV4cCI6MjEwNzM5MjA2NH0.riUFETAmuj_YESaH-hHq0tzFD-DpI08eSbcH_xUek1k";
 let sb = SUPABASE_URL.startsWith("https://你的") ? null : window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 let cloudUser = null, cloudTimer = null;
